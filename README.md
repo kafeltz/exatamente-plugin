@@ -109,3 +109,4 @@ $ npm start
 ## License
 
 BSD 3-Clause
+# exatamente-plugin
