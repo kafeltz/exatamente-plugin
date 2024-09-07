@@ -72,7 +72,7 @@ export type RequiredPluginOptions = Required<PluginOptions>;
 
 const plugin: Plugin<PluginOptions> = (editor, opts: Partial<PluginOptions> = {}) => {
   const config: RequiredPluginOptions = {
-    blocks: ['link-block', 'quote', 'text-basic'],
+    blocks: ['link-block', 'quote', 'text-basic', 'title'],
     block: () => ({}),
     modalImportTitle: 'Import',
     modalImportButton: 'Import',
@@ -86,10 +86,10 @@ const plugin: Plugin<PluginOptions> = (editor, opts: Partial<PluginOptions> = {}
   };
 
   if (config.useCustomTheme && typeof window !== 'undefined') {
-    const primaryColor = '#463a3c';
-    const secondaryColor = '#b9a5a6';
+    const primaryColor = '#FFF';
+    const secondaryColor = '#070707';
     const tertiaryColor = '#804f7b';
-    const quaternaryColor = '#d97aa6';
+    const quaternaryColor = 'var(--Brand-Orange-200, #FF702E)';
     const prefix = 'gjs-';
     let cssString = '';
 
